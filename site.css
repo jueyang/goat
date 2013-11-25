@@ -3,12 +3,17 @@
 
 {% include reset.css %}
 {% include font-awesome.min.css %}
+
 /* swatches
+
 #333
 #ddd
 #fff
 #A0B476
+
 */
+
+/* font */
 @font-face {
   font-family: 'Matchbook';
   src: url('fonts/matchbook-webfont.eot');
@@ -19,6 +24,44 @@
   font-weight: normal;
   font-style: normal;
 	}
+
+/* animation */
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation: fadeInDown 1 2000ms forwards;
+  -moz-animation:    fadeInDown 1 2000ms forwards;
+  -o-animation:		 fadeInDown 1 2000ms forwards;
+  animation: 		 fadeInDown 1 2000ms forwards;
+}
 
 body {
 	font-family:'Matchbook',sans-serif;

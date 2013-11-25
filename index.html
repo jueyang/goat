@@ -1,0 +1,43 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+  <title>ThxGoat</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/site.css" type="text/css" />
+  <script src="{{site.baseurl}}/site.js"></script>
+</head>
+<body>
+  <section class='cover'>
+  	<h1>11/28/2013</h1>
+    <h1>we roast for goatsgiving - thx</h1>
+    <p class='rsvp'>R.S.V.P</p>
+  </section>
+  <section class='form'>
+    <h1>goat roast 11/28^</h1>
+    <h1>from dawn to dawn</h1>
+    <ul class='social'>
+      <li><a href='http://statigr.am/tag/thxgoat' target='_blank'><i class="fa fa-instagram"></i></a></li>
+      <li><a href='https://twitter.com/thxgoat' target='_blank'><i class="fa fa-twitter"></i></a></li>
+      <li><a href='https://github.com/jueyang/goat' target='_blank'><i class="fa fa-github"></i></a></li>
+      <li><a href='mailto:thx.mmm.goat@gmail.com'><i class="fa fa-envelope-o"></i></a></li>
+    </ul>
+  	{% include google-form.html %}
+    <small>^We are all in for a good time. So there will be vegetarian-friendly options on-site. </small>
+  </section>
+  <section class='footer'>
+    <small>Brought to you by <a href='https://twitter.com/jue_yang'>two</a> good <a href='https://twitter.com/dereklieu'>people</a>. Serendipitous <a href='http://giphy.com/gifs/DoucuFWol5Hlm' target='blank'>cover</a> and <a href='http://giphy.com/gifs/12QvPuEx07MNRS' target='blank'>footer</a> found on Giphy</small>
+  </section>
+</body>
+<script>
+  function smoothScroll(offset){
+    $('html,body').animate({
+     scrollTop: offset
+    }, 800);
+  }
+  $('.rsvp').on('click',function(){
+     smoothScroll($('.form').offset().top)
+  });
+</script>
